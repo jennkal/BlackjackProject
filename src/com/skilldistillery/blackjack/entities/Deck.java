@@ -30,6 +30,7 @@ public class Deck {
 		//shuffle deck, like in NBA Draft pick app.
 		//good old Collections.shuffle to rearrange the arraylist.
 		Collections.shuffle(deck);
+		
 	}
 	
 	//returns a card
@@ -38,10 +39,22 @@ public class Deck {
 		Card dealtCard = deck.remove(0);
 		return dealtCard;
 	}
+	
+	public void dealCard(Hand hand) {
+		hand.addCard(dealCard());
+	}
 
 	public int checkDeckSize() {
 		//returns the number of cards still in deck.
 		return deck.size();
+	}
+
+	public List<Card> getDeck() {
+		return deck;
+	}
+
+	public void setDeck(List<Card> deck) {
+		this.deck = deck;
 	}
 	
 	
