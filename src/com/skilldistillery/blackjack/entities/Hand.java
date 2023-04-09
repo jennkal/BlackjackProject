@@ -38,8 +38,10 @@ public abstract class Hand {
 	}
 
 	// clear hand
-	public void clear() {
-
-	}
+	public void clear(Hand hand) {
+		
+		cards.removeAll(cards);
+ 	}
+	
 
 }

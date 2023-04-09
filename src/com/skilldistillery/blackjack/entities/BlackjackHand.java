@@ -30,9 +30,9 @@ public class BlackjackHand extends Hand {
 	}
 
 	// checking if bust, over 21
-	public boolean isBust() {
-		if (handValue > 21) {
-			System.out.println("Oh No Player Bust");
+	public boolean isBust(Hand hand) {
+		if (getHandValue(hand) > 21) {
+			System.out.println("Oh No Bust");
 			return true;
 		} else {
 			return false;

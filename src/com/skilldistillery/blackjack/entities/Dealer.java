@@ -34,9 +34,5 @@ public class Dealer extends Player {
 	public void setDeck(Deck deck) {
 		this.deck = deck;
 	}
-	
-	//method for dealers turn
-	
 
-	//inharet everything player can do
 }
